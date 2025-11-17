@@ -1,0 +1,45 @@
+{
+    "title": "शिव पञ्चाक्षर स्तोत्रम्",
+    "subtitle1": "Shiva Panchakshara Stotram",
+    "subtitle2": "Composed by Adi Shankaracharya",
+    "outroTitle": "॥ ॐ नमः शिवाय ॥",
+    "outroSubtitle": "Om Namah Shivaya",
+    "verses": [
+        {
+            "number": 1,
+            "sanskrit": "नागेन्द्रहाराय त्रिलोचनाय भस्माङ्गरागाय महेश्वराय।<br>नित्याय शुद्धाय दिगम्बराय तस्मै न काराय नमः शिवाय॥",
+            "transliteration": "nāgendrahārāya trilocanāya bhasmāṅgarāgāya maheśvarāya।<br>nityāya śuddhāya digambarāya tasmai na kārāya namaḥ śivāya॥",
+            "meaning": "Salutations to Shiva, who wears the king of serpents as a garland, who has three eyes, whose body is smeared with sacred ashes, who is the great Lord, who is eternal, ever pure, and who wears the directions as His garment - represented by the syllable 'Na'."
+        },
+        {
+            "number": 2,
+            "sanskrit": "मन्दाकिनीसलिलचन्दनचर्चिताय नन्दीश्वरप्रमथनाथमहेश्वराय।<br>मन्दारपुष्पबहुपुष्पसुपूजिताय तस्मै म काराय नमः शिवाय॥",
+            "transliteration": "mandākinīsalilacandanacarci tāya nandīśvarapramatha nāthamaheśvarāya।<br>mandārapuṣpabahupuṣp asupūjitāya tasmai ma kārāya namaḥ śivāya॥",
+            "meaning": "Salutations to Shiva, who is bathed in the waters of the Ganga and anointed with sandalwood paste, who is the Lord of Nandi and the ghosts, the great Lord, who is worshipped with mandara and many other flowers - represented by the syllable 'Ma'."
+        },
+        {
+            "number": 3,
+            "sanskrit": "शिवाय गौरीवदनाब्जवृन्द सूर्याय दक्षाध्वरनाशकाय।<br>श्री नीलकण्ठाय वृषध्वजाय तस्मै शि काराय नमः शिवाय॥",
+            "transliteration": "śivāya gaurīvadanābjavṛn da sūryāya dakṣādhvaranāśakāya।<br>śrī nīlakaṇṭhāya vṛṣadhvajāya tasmai śi kārāya namaḥ śivāya॥",
+            "meaning": "Salutations to Shiva, who is auspicious and like the sun that makes Gauri's lotus face bloom, who destroyed Daksha's sacrifice, who has a blue throat and a bull on His banner - represented by the syllable 'Shi'."
+        },
+        {
+            "number": 4,
+            "sanskrit": "वसिष्ठकुम्भोद्भवगौतमार्य मूनीन्द्रदेवार्चितशेखराय।<br>चन्द्रार्कवैश्वानरलोचनाय तस्मै व काराय नमः शिवाय॥",
+            "transliteration": "vasiṣṭhakumbhodbhavagautamārya mūnīndrdevārcitaśekharāya।<br>candrārkavaiśvānaraloc anāya tasmai va kārāya namaḥ śivāya॥",
+            "meaning": "Salutations to Shiva, whose head is worshipped by great sages like Vasishtha, Agastya and Gautama, and by the king of gods, whose eyes are the moon, sun and fire - represented by the syllable 'Va'."
+        },
+        {
+            "number": 5,
+            "sanskrit": "यज्ञस्वरूपाय जटाधराय पिनाकहस्ताय सनातनाय।<br>दिव्याय देवाय दिगम्बराय तस्मै य काराय नमः शिवाय॥",
+            "transliteration": "yajñasvarūpāya jaṭādharāya pinākahas tāya sanātanāya।<br>divyāya devāya digambarāya tasmai ya kārāya namaḥ śivāya॥",
+            "meaning": "Salutations to Shiva, who is the embodiment of sacrifice, who has matted locks, who holds the trident, who is eternal, who is divine, the shining one, who wears the directions as His garment - represented by the syllable 'Ya'."
+        },
+        {
+            "number": 6,
+            "sanskrit": "पञ्चाक्षरमिदं पुण्यं यः पठेच्छिवसन्निधौ।<br>शिवलोकमवाप्नोति शिवेन सह मोदते॥",
+            "transliteration": "pañcākṣaramidaṃ puṇyaṃ yaḥ paṭhecchivasannidhau।<br>śivalokamavāpnoti śivena saha modate॥",
+            "meaning": "One who recites this sacred five-syllable hymn in the presence of Lord Shiva attains the abode of Shiva and rejoices with Him eternally."
+        }
+    ]
+}

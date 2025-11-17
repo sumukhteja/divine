@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Stotram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <style>
+        /* Same CSS as before - keeping all your existing styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            background: #fff;
+            color: #000;
+        }
+
+        /* Back button */
+        .back-button {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 0.8rem 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            z-index: 1000;
+            text-decoration: none;
+            color: #000;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #f5f5f5;
+            border-color: #d4af37;
+        }
+
+        #intro {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .subtitle {
+            font-size: 2.4rem;
+            color: #666;
+            font-weight: 300;
+        }
+
+        #scrolly {
+            position: relative;
+            display: flex;
+            background-color: #fff;
+            padding: 0;
+        }
+
+        .sticky-thing {
+            position: sticky;
+            width: 50%;
+            height: 100vh;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-right: 1px solid #ddd;
+        }
+
+        .sticky-content {
+            text-align: center;
+            padding: 4rem;
+            max-width: 700px;
+        }
+
+        .verse-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 7rem;
+            color: #d4af37;
+            transition: all 0.6s ease;
+        }
+
+        .sanskrit {
+            font-size: 2.2rem;
+            line-height: 2.4;
+            margin: 2rem 0 1rem 0;
+            transition: all 0.6s ease;
+            font-weight: 300;
+            color: #000;
+        }
+
+        .transliteration {
+            font-size: 1.3rem;
+            line-height: 2;
+            transition: all 0.6s ease 0.1s;
+            color: #666;
+            font-style: italic;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+
+        article {
+            position: relative;
+            width: 50%;
+            padding: 0;
+        }
+
+        .step {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 4rem;
+        }
+
+        .step-content {
+            max-width: 550px;
+        }
+
+        .step h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .step p {
+            font-size: 1.3rem;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .mobile-simple {
+            display: none;
+        }
+
+        .mobile-verse {
+            padding: 3rem 1.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .mobile-verse .verse-number {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-verse .sanskrit {
+            font-size: 1.4rem;
+            line-height: 2;
+            margin-bottom: 1rem;
+        }
+
+        .mobile-verse .transliteration {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .mobile-verse h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .mobile-verse p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 0.8rem;
+        }
+
+        #outro {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .outro-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            #scrolly {
+                display: none;
+            }
+
+            .mobile-simple {
+                display: block;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            #intro {
+                height: auto;
+                min-height: 70vh;
+                padding: 3rem 1.5rem;
+            }
+
+            #outro {
+                height: auto;
+                min-height: 50vh;
+                padding: 3rem 1.5rem;
+            }
+
+            .outro-content h2 {
+                font-size: 2rem;
+            }
+
+            .outro-content .subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .mobile-verse {
+                padding: 2.5rem 1.2rem;
+            }
+
+            .mobile-verse .verse-number {
+                font-size: 2.8rem;
+            }
+
+            .mobile-verse .sanskrit {
+                font-size: 1.2rem;
+            }
+
+            .mobile-verse .transliteration {
+                font-size: 0.85rem;
+            }
+
+            .mobile-verse h2 {
+                font-size: 1.1rem;
+            }
+
+            .mobile-verse p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back to All Stotrams</a>
+
+    <section id="intro">
+        <h1 id="main-title"></h1>
+        <p class="subtitle" id="subtitle-1"></p>
+        <p class="subtitle" style="margin-top: 2rem; font-size: 2rem;" id="subtitle-2"></p>
+    </section>
+
+    <section id="scrolly">
+        <div class="sticky-thing">
+            <div class="sticky-content" id="vis">
+                <div class="verse-number">॥ 1 ॥</div>
+                <div class="sanskrit"></div>
+                <div class="transliteration"></div>
+            </div>
+        </div>
+
+        <article id="desktop-verses"></article>
+    </section>
+
+    <section class="mobile-simple" id="mobile-verses"></section>
+
+    <section id="outro">
+        <div class="outro-content">
+            <h2 id="outro-title"></h2>
+            <p class="subtitle" id="outro-subtitle"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

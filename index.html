@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Stotrams</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            background: #fff;
+            color: #000;
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 4rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 2.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #000;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: #d4af37;
+        }
+
+        .card-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #d4af37;
+        }
+
+        .card-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            color: #999;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .card {
+                padding: 2rem;
+            }
+
+            .card-title {
+                font-size: 2rem;
+            }
+
+            .card-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sacred Stotrams</h1>
+        <p class="subtitle">Ancient Vedic Hymns and Prayers</p>
+
+        <div class="grid" id="stotram-grid">
+            <!-- Cards will be generated here -->
+        </div>
+    </div>
+
+    <script>
+        const stotrams = [
+            {
+                file: 'sri-suktam',
+                titleSanskrit: 'श्री सूक्तम्',
+                titleEnglish: 'Sri Suktam',
+                description: '27 verses from the Rigveda invoking Goddess Lakshmi'
+            },
+            {
+                file: 'shiva-tandava',
+                titleSanskrit: 'शिव ताण्डव स्तोत्रम्',
+                titleEnglish: 'Shiva Tandava Stotram',
+                description: '16 verses composed by Ravana describing Lord Shiva\'s cosmic dance'
+            },
+            {
+                file: 'lalita-sahasranamam',
+                titleSanskrit: 'ललिता सहस्रनाम',
+                titleEnglish: 'Lalita Sahasranamam',
+                description: '1000 names of the Divine Mother from Brahmanda Purana'
+            },
+            {
+                file: 'hanuman-chalisa',
+                titleSanskrit: 'हनुमान चालीसा',
+                titleEnglish: 'Hanuman Chalisa',
+                description: '40 verses in praise of Lord Hanuman by Tulsidas'
+            },
+            {
+                file: 'shiva-panchakshara',
+                titleSanskrit: 'शिव पञ्चाक्षर स्तोत्रम्',
+                titleEnglish: 'Shiva Panchakshara Stotram',
+                description: '6 verses praising the five sacred syllables Na-Ma-Shi-Va-Ya'
+            },
+            {
+                file: 'lingashtakam',
+                titleSanskrit: 'लिङ्गाष्टकम्',
+                titleEnglish: 'Lingashtakam',
+                description: '8 verses glorifying the Shiva Lingam by Adi Shankaracharya'
+            },
+            {
+                file: 'kalabhairava-ashtakam',
+                titleSanskrit: 'कालभैरवाष्टकम्',
+                titleEnglish: 'Kalabhairava Ashtakam',
+                description: '8 verses praising Lord Kalabhairava by Adi Shankaracharya'
+            },
+            {
+                file: 'sankat-nashan-ganesh',
+                titleSanskrit: 'संकटनाशन गणेश स्तोत्रम्',
+                titleEnglish: 'Sankat Nashan Ganesh Stotram',
+                description: '8 verses to remove obstacles and grant success from Narada Purana'
+            },
+            {
+                file: 'aigiri-nandini',
+                titleSanskrit: 'महिषासुरमर्दिनी स्तोत्रम्',
+                titleEnglish: 'Mahishasura Mardini Stotram (Aigiri Nandini)',
+                description: 'Hymn praising Goddess Durga as slayer of demon Mahishasura'
+            },
+            {
+                file: 'vishnu-sahasranama',
+                titleSanskrit: 'विष्णु सहस्रनाम',
+                titleEnglish: 'Vishnu Sahasranamam',
+                description: 'First 5 verses of the 1000 names of Lord Vishnu'
+            },
+            {
+                file: 'shuddhosi-buddhosi',
+                titleSanskrit: 'शुद्धोसि बुद्धोसि',
+                titleEnglish: 'Shuddhosi Buddhosi (Madalasa\'s Lullaby)',
+                description: 'Queen Madalasa\'s profound teaching to her son from Markandeya Purana'
+            },
+            {
+                file: 'ganapati-atharvashirsha',
+                titleSanskrit: 'श्री गणपत्यथर्वशीर्षम्',
+                titleEnglish: 'Ganapati Atharvashirsha',
+                description: 'Sacred Upanishad from Atharva Veda glorifying Lord Ganesha'
+            },
+            {
+                file: 'nirvana-shatakam',
+                titleSanskrit: 'निर्वाण षट्कम्',
+                titleEnglish: 'Nirvana Shatakam (Atma Shatakam)',
+                description: '6 verses of self-realization by Adi Shankaracharya'
+            },
+            {
+                file: 'guru-paduka-stotram',
+                titleSanskrit: 'गुरु पादुका स्तोत्रम्',
+                titleEnglish: 'Guru Paduka Stotram',
+                description: '8 verses venerating the sacred sandals of the Guru by Adi Shankaracharya'
+            },
+            {
+                file: 'durga-dvatrinsha-namavali',
+                titleSanskrit: 'दुर्गा द्वात्रिंशन्नामावलिः',
+                titleEnglish: 'Durga Dvatrinsha Namavali',
+                description: '32 sacred names of Goddess Durga from Durga Saptashati'
+            },
+            {
+                file: 'bilvashtakam',
+                titleSanskrit: 'बिल्वाष्टकम्',
+                titleEnglish: 'Bilvashtakam',
+                description: '8 verses glorifying the sacred Bilva leaf by Adi Shankaracharya'
+            }
+        ];
+
+        const grid = document.getElementById('stotram-grid');
+
+        stotrams.forEach(stotram => {
+            const card = document.createElement('a');
+            card.className = 'card';
+            card.href = `stotram.html?file=${stotram.file}`;
+            
+            card.innerHTML = `
+                <div class="card-title">${stotram.titleSanskrit}</div>
+                <div class="card-subtitle">${stotram.titleEnglish}</div>
+                <div class="card-description">${stotram.description}</div>
+            `;
+            
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+</html>

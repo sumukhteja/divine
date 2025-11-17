@@ -1,0 +1,39 @@
+{
+    "title": "विष्णु सहस्रनाम",
+    "subtitle1": "Vishnu Sahasranamam",
+    "subtitle2": "1000 Names of Lord Vishnu from Mahabharata",
+    "outroTitle": "॥ ॐ नमो नारायणाय ॥",
+    "outroSubtitle": "Om Namo Narayanaya",
+    "verses": [
+        {
+            "number": 1,
+            "sanskrit": "विश्वं विष्णुर्वषट्कारो भूतभव्यभवत्प्रभुः।<br>भूतकृद्भूतभृद्भावो भूतात्मा भूतभावनः॥",
+            "transliteration": "viśvaṃ viṣṇurvaṣaṭkāro bhūtabhavyabhavatprabhuḥ।<br>bhūtakṛdbhūtabhṛdbhāvo bhūtātmā bhūtabhāvanaḥ॥",
+            "meaning": "He is the Universe (Vishvam), He is Vishnu who pervades everything, He is the Vashat-kara (the ritual call in sacrifices), He is the Lord of past, present and future. He is the creator of all beings, the sustainer of all beings, He who is the pure existence, the soul of all beings, and the source of all beings."
+        },
+        {
+            "number": 2,
+            "sanskrit": "पूतात्मा परमात्मा च मुक्तानां परमा गतिः।<br>अव्ययः पुरुषः साक्षी क्षेत्रज्ञोऽक्षर एव च॥",
+            "transliteration": "pūtātmā paramātmā ca muktānāṃ paramā gatiḥ।<br>avyayaḥ puruṣaḥ sākṣī kṣetrajño'kṣara eva ca॥",
+            "meaning": "He whose nature is purity, the supreme soul, the highest goal of the liberated ones, the imperishable one, the supreme being, the witness of all, the knower of the field (body), and the indestructible one."
+        },
+        {
+            "number": 3,
+            "sanskrit": "योगो योगविदां नेता प्रधानपुरुषेश्वरः।<br>नारसिंहवपुः श्रीमान् केशवः पुरुषोत्तमः॥",
+            "transliteration": "yogo yogavidāṃ netā pradhānapuruṣeśvaraḥ।<br>nārasiṃhavapuḥ śrīmān keśavaḥ puruṣottamaḥ॥",
+            "meaning": "He who is yoga itself, the leader of those who know yoga, the Lord of Prakriti (nature) and Purusha (soul), who took the form of Narasimha (man-lion), the glorious one, the slayer of demon Keshi, and the Supreme Being."
+        },
+        {
+            "number": 4,
+            "sanskrit": "सर्वः शर्वः शिवः स्थाणुर्भूतादिर्निधिरव्ययः।<br>सम्भवो भावनो भर्ता प्रभवः प्रभुरीश्वरः॥",
+            "transliteration": "sarvaḥ śarvaḥ śivaḥ sthāṇurbhūtādirnidhiravyayaḥ।<br>sambhavo bhāvano bhartā prabhavaḥ prabhurīśvaraḥ॥",
+            "meaning": "He who is omniscient, the destroyer, the auspicious one, the immovable pillar, the source of all elements, the imperishable treasure. He who manifests all, the creator, the sustainer, the origin of all, the mighty Lord, the Supreme Controller."
+        },
+        {
+            "number": 5,
+            "sanskrit": "स्वयम्भूः शम्भुरादित्यः पुष्कराक्षो महास्वनः।<br>अनादिनिधनो धाता विधाता धातुरुत्तमः॥",
+            "transliteration": "svayambhūḥ śambhurādityaḥ puṣkarākṣo mahāsvanaḥ।<br>anādinidha no dhātā vidhātā dhāturuttamaḥ॥",
+            "meaning": "The self-existent one, the source of happiness, brilliant like the sun, lotus-eyed, of mighty sound (Om). He who has no beginning or end, the creator, the dispenser of fruits of actions, the supreme being among all beings."
+        }
+    ]
+}

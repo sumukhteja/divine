@@ -1,0 +1,45 @@
+{
+    "title": "शुद्धोसि बुद्धोसि",
+    "subtitle1": "Shuddhosi Buddhosi (Madalasa's Lullaby)",
+    "subtitle2": "From Markandeya Purana",
+    "outroTitle": "॥ ॐ शान्तिः शान्तिः शान्तिः ॥",
+    "outroSubtitle": "Om Shanti Shanti Shanti",
+    "verses": [
+        {
+            "number": 1,
+            "sanskrit": "शुद्धोसि बुद्धोसि निरञ्जनोऽसि<br>संसारमाया परिवर्जितोऽसि।<br>संसारस्वप्नं त्यज मोहनिद्रां<br>मन्दालसोल्लपमुवाच पुत्रम्॥",
+            "transliteration": "śuddho'si buddho'si nirañjano'si<br>saṃsāramāyā parivarjito'si।<br>saṃsārasvapnaṃ tyaja mohanid rāṃ<br>mandālasollap amuvaāca putram॥",
+            "meaning": "Madalasa says to her crying son: You are pure, you are enlightened, you are spotless and untainted. You are free from the illusion of this world. Give up this dream of worldly existence and wake up from this deep slumber of delusion."
+        },
+        {
+            "number": 2,
+            "sanskrit": "शुद्धोऽसि रे तात न तेऽस्ति नाम<br>कृतं हि तत्कल्पनयाधुनैव।<br>पञ्चात्मकं देहं इदं न तेऽस्ति<br>नैवास्य त्वं रोदिषि कस्य हेतोः॥",
+            "transliteration": "śuddho'si re tāta na te'sti nāma<br>kṛtaṃ hi tatkalpanayādhun aiva।<br>pañcātmakaṃ dehaṃ idaṃ na te'sti<br>naivāsya tvaṃ rodiṣi kasya hetoḥ॥",
+            "meaning": "My child, you are ever pure! You do not have a name - a name is only an imaginary superimposition on you. This body made of five elements is not you, nor do you belong to it. This being so, what can be the reason for your crying?"
+        },
+        {
+            "number": 3,
+            "sanskrit": "भूतानि भूतैः परिदुर्बलानि<br>वृद्धिं समायाति यथेह पुंसः।<br>अन्नाम्बुपानादिभिरेव तस्मात्<br>न तेऽस्ति वृद्धिर् न च तेऽस्ति हानिः॥",
+            "transliteration": "bhūtāni bhūtaiḥ paridurab alāni<br>vṛddhiṃ samāyāti yatheha puṃsaḥ।<br>annāmbupā nādibhireva tasmāt<br>na te'sti vṛddhir na ca te'sti hāniḥ॥",
+            "meaning": "The elements that make this body grow with accumulation of more elements or reduce in size if some elements are taken away. This is what is seen in a body's growing or becoming lean depending upon the consumption of food, water, etc. You do not have growth or decay."
+        },
+        {
+            "number": 4,
+            "sanskrit": "त्वं कञ्चुके शीर्यमाणे निजोऽस्मिन्<br>तस्मिन् देहे मूढतां मा व्रजेथाः।<br>शुभाशुभौः कर्मभिर्देहमेतत्<br>मृदादिभिः कञ्चुकस्ते पिनद्धः॥",
+            "transliteration": "tvaṃ kañcuke śīryamāṇe nijo'smin<br>tasmin dehe mūḍhatāṃ mā vrajethāḥ।<br>śubhāśubhauḥ karmabhirdeham etat<br>mṛdādibhiḥ kañcukaste pinadhaḥ॥",
+            "meaning": "You are in the body which is like a jacket that gets worn out day by day. Do not have the wrong notion that you are the body. This body is like a jacket that you are tied to for the fruition of good and bad karmas."
+        },
+        {
+            "number": 5,
+            "sanskrit": "यानं चित्तौ तत्र गतश्च देहो<br>देहोऽपि चान्यः पुरुषो निविष्ठः।<br>ममत्वमुरोऽया न यथा तथाऽस्मिन्<br>देहेति मात्रं बत मूढरौषः॥",
+            "transliteration": "yānaṃ cittau tatra gataśca deho<br>deho'pi cānyaḥ puruṣo niviṣṭhaḥ।<br>mamatvamur o'yā na yathā tathā'smin<br>deheti mātraṃ bata mūḍharauṣaḥ॥",
+            "meaning": "The vehicle that moves on the ground is different from the person in it; similarly this body is also different from the person who is inside! The owner of the body is different from the body! Ah, how foolish it is to think 'I am the body'!"
+        },
+        {
+            "number": 6,
+            "sanskrit": "सुखानि दुःखोपशमाय भोगान्<br>सुखाय जानाति विमूढचेताः।<br>तान्येव दुःखानि पुनः सुखानि<br>जानाति विद्वान्विमूढचेताः॥",
+            "transliteration": "sukhāni duḥkhopaśamāya bhogān<br>sukhāya jānāti vimūḍhacetāḥ।<br>tānyeva duḥkhāni punaḥ sukhāni<br>jānāti vidvānvi mūḍhacetāḥ॥",
+            "meaning": "The deluded person looks at objects of enjoyment as giving happiness by removing unhappiness. The wise person clearly sees that the same object which gives happiness now will become a source of unhappiness later."
+        }
+    ]
+}
